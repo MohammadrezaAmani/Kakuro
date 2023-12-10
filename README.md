@@ -33,7 +33,7 @@ Kakuro, also known as Cross Sum, is a logic-based number placement puzzle with a
 To install KakuroSolver, simply execute the following command in your terminal:
 
 ```bash
-git clone https://github.com/MohammadrezaAmani/kakuro
+git clone https://github.com/MohammadrezaAmani/Kakuro
 ```
 
 Once installed, you can import the KakuroSolver module and start solving Kakuro puzzles:
