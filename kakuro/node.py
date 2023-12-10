@@ -1,3 +1,6 @@
+from kakuro.config import Config
+
+
 class Node:
     def __init__(
         self,
@@ -151,7 +154,11 @@ class Node:
                         self.value_down[j] = self.combinations_down[i][j]
 
     def __repr__(self):
-        return f"({self.down}\{self.right})"
+        return (
+            f"{self.down}"
+            if (self.down == Config.UNKNOWN or self.down == self.right == Config.EMPTY)
+            else f"{self.down}{Config.SEP}{self.right}"
+        )
 
     def __str__(self) -> str:
         return self.__repr__()

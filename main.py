@@ -11,3 +11,4 @@ board = """
 if __name__ == "__main__":
     game = Game(board)
     game.run(depth=3)
+    print(game)

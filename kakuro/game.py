@@ -31,11 +31,20 @@ class Game:
         """
         ...
 
-    def run(self) -> None:
+    def run(self, depth: int = 3) -> bool:
         """
         Run the game.
         """
+        self.optimize(depth=depth)
+        self.test()
+        return True
         ...
+
+    def __str__(self) -> str:
+        return str(self.board)
+
+    def __repr__(self) -> str:
+        return str(self.board)
 
     def test(self) -> None:
         """
